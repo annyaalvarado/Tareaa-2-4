@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B9EBEF"
+    tools:context=".MainActivity">
+
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="229dp"
+      android:layout_height="52dp"
+      android:fontFamily="sans-serif-black"
+      android:text="Firma Digital"
+      android:textColor="@color/cardview_dark_background"
+      android:textSize="34sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.609"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.023" />
+
+  <Button
+      android:id="@+id/btnVer"
+      style="@style/Animation.Design.BottomSheetDialog"
+      android:layout_width="105dp"
+      android:layout_height="49dp"
+      android:backgroundTint="@color/white"
+      android:textColor="@color/black"
+      android:foregroundGravity="top|center"
+      android:text="Ver"
+      app:icon="?android:attr/actionModeFindDrawable"
+      app:iconTint="#03A9F4"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.054"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.099" />
+
+  <Button
+      android:id="@+id/btnLimpiar"
+      style="@style/Animation.Design.BottomSheetDialog"
+      android:layout_width="70dp"
+      android:layout_height="50dp"
+      android:backgroundTint="@color/white"
+      android:textColor="@color/black"
+      android:foregroundGravity="top|center"
+      app:icon="@android:drawable/ic_input_delete"
+      app:iconTint="#03A9F4"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.903"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.632" />
+
+  <EditText
+      android:id="@+id/txtnombre"
+      android:layout_width="405dp"
+      android:layout_height="53dp"
+      android:background="@color/white"
+      android:backgroundTintMode="multiply"
+      android:ems="10"
+      android:hint="Nombre y Apellido"
+      android:inputType="textPersonName"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.808" />
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="204dp"
+      android:layout_height="58dp"
+      android:fontFamily="monospace"
+      android:text="Descripcion (Nombre)"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.014"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.714" />
+
+  <Button
+      android:id="@+id/btnguardar"
+      style="@style/Animation.Design.BottomSheetDialog"
+      android:layout_width="155dp"
+      android:layout_height="58dp"
+      android:backgroundTint="@color/white"
+      android:text="SALVAR"
+      android:textColor="@color/black"
+      app:icon="@android:drawable/ic_menu_upload"
+      app:iconTint="#03A9F4"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.93" />
+
+  <com.example.tarea_2_4.Lienzo
+      android:id="@+id/lienzo"
+      android:layout_width="314dp"
+      android:layout_height="289dp"
+      android:background="#82C8CD"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.494"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.285" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
